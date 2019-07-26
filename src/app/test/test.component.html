@@ -1,0 +1,18 @@
+<!--color property binding (static)-->
+<h2 [style.color]="'orange'">
+    style binding 1
+</h2>
+<!--ternary operator is used for conditional binding-->
+<h2 [style.color]="hasError? 'red' : 'green'">
+    style binding 2
+</h2>
+
+<!--color property binding (dynamic)-->
+<h2 [style.color]="highlightColor">
+    style binding 3
+</h2>
+
+<!--To apply multiple styles we need to use ngstyle directive-->
+<h2 [ngstyle]="titleStyles">
+    style binding 4
+</h2>
